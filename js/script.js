@@ -89,3 +89,8 @@ const animation = setInterval(()=>{
 },25);
 
 console.log("🚀 NEET EDGE OS Loaded");
+const todayDate = document.getElementById("todayDate");
+
+const today = new Date();
+
+todayDate.textContent = today.toDateString();
