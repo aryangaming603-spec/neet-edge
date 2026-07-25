@@ -1,1 +1,87 @@
+/* ==========================
+   HEADER
+========================== */
 
+.header{
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+.header h1{
+
+font-size:38px;
+
+color:var(--cyan);
+
+text-shadow:
+
+0 0 12px var(--cyan),
+
+0 0 25px var(--cyan);
+
+margin-bottom:12px;
+
+}
+
+#greeting{
+
+font-size:24px;
+
+color:#9EEBFF;
+
+margin-bottom:8px;
+
+}
+
+.username{
+
+font-size:20px;
+
+color:var(--text2);
+
+margin-bottom:18px;
+
+}
+
+.clock-box{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+padding:18px;
+
+backdrop-filter:blur(15px);
+
+box-shadow:
+
+0 0 18px rgba(0,212,255,.15);
+
+}
+
+#time{
+
+font-size:42px;
+
+color:var(--green);
+
+text-shadow:
+
+0 0 15px var(--green);
+
+}
+
+#date{
+
+margin-top:8px;
+
+color:var(--text2);
+
+font-size:16px;
+
+}
