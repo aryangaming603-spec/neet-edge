@@ -38,3 +38,15 @@ Math.round(completed/total*100)
 }
 
 setInterval(updateAnalytics,500);
+
+document.getElementById("taskCount").textContent =
+document.querySelectorAll("#taskList input").length;
+
+document.getElementById("chapters").textContent =
+"0 / 83";
+
+document.getElementById("studyHours").textContent =
+"0 Hrs";
+
+document.getElementById("streak").textContent =
+"1 Day";
