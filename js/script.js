@@ -87,3 +87,5 @@ const animation = setInterval(()=>{
     }
 
 },25);
+
+console.log("🚀 NEET EDGE OS Loaded");
