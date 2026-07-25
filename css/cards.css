@@ -85,3 +85,56 @@ margin-right:10px;
 accent-color:#00FF99;
 
 }
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.mini-card{
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.1);
+
+border-radius:18px;
+
+padding:18px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.mini-card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 20px rgba(0,212,255,.3);
+
+}
+
+.mini-card h4{
+
+color:#00D4FF;
+
+margin-bottom:10px;
+
+}
+
+.mini-card p{
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#00FF99;
+
+}
