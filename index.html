@@ -2,12 +2,25 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>NEET EDGE OS</title>
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/tasks.css">
+<link rel="stylesheet" href="css/timer.css">
+<link rel="stylesheet" href="css/progress.css">
+<link rel="stylesheet" href="css/chapter.css">
+<link rel="stylesheet" href="css/analytics.css">
+<link rel="stylesheet" href="css/settings.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -16,15 +29,15 @@
 
 <div class="container">
 
-<header>
+<header class="header">
 
 <h1>🧠 NEET EDGE OS</h1>
 
 <p id="greeting">Loading...</p>
 
-<p class="username">Aryan 👋</p>
+<h2 class="username">Aryan 👋</h2>
 
-<div class="clock">
+<div class="clock-box">
 
 <h2 id="time">00:00:00</h2>
 
@@ -35,31 +48,25 @@
 </header>
 
 
-<!-- Mission -->
-
-<div class="card">
+<section class="card mission-card">
 
 <h3>🎯 Today's Mission</h3>
 
 <p>Crack NEET 2027</p>
 
-</div>
+</section>
 
 
-<!-- Countdown -->
-
-<div class="card">
+<section class="card countdown-card">
 
 <h3>⏳ NEET Countdown</h3>
 
 <h2 id="countdown">Loading...</h2>
 
-</div>
+</section>
 
 
-<!-- Task Manager -->
-
-<div class="card">
+<section class="card task-card">
 
 <h3>📋 Today's Tasks</h3>
 
@@ -74,44 +81,50 @@
 </div>
 
 <button id="addTask">
+
 ➕ Add Task
+
 </button>
 
-</div>
+</section>
 
 
-<!-- Focus Timer -->
-
-<div class="card">
+<section class="card timer-card">
 
 <h3>⏱ Focus Timer</h3>
 
-<h2 id="timer">
+<h1 id="timer">
+
 25:00
-</h2>
+
+</h1>
 
 <div class="buttons">
 
 <button id="startBtn">
+
 ▶ Start
+
 </button>
 
 <button id="pauseBtn">
+
 ⏸ Pause
+
 </button>
 
 <button id="resetBtn">
+
 🔄 Reset
+
 </button>
 
 </div>
 
-</div>
+</section>
 
 
-<!-- Progress -->
-
-<div class="card">
+<section class="card progress-card">
 
 <h3>📈 Today's Progress</h3>
 
@@ -122,19 +135,21 @@
 </div>
 
 <p id="progressText">
+
 0%
+
 </p>
 
-</div>
+</section>
 
 
-<!-- Chapter Tracker -->
-
-<div class="card">
+<section class="card chapter-card">
 
 <h3>📚 Chapter Tracker</h3>
 
-<p>Physics</p>
+<div class="subject">
+
+Physics
 
 <div class="progress">
 
@@ -142,7 +157,11 @@
 
 </div>
 
-<p>Chemistry</p>
+</div>
+
+<div class="subject">
+
+Chemistry
 
 <div class="progress">
 
@@ -150,7 +169,11 @@
 
 </div>
 
-<p>Biology</p>
+</div>
+
+<div class="subject">
+
+Biology
 
 <div class="progress">
 
@@ -160,13 +183,40 @@
 
 </div>
 
+</section>
 
-<!-- Footer -->
+
+<section class="card analytics-card">
+
+<h3>📊 Analytics</h3>
+
+<p>
+
+Study Hours : 0
+
+</p>
+
+<p>
+
+Completed Tasks : 0
+
+</p>
+
+<p>
+
+Current Streak : 0
+
+</p>
+
+</section>
+
 
 <footer>
 
 <p>
+
 NEET EDGE OS v2.0 Alpha
+
 </p>
 
 </footer>
@@ -174,7 +224,17 @@ NEET EDGE OS v2.0 Alpha
 </div>
 
 <script src="js/script.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/greeting.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/tasks.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/chapter.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/analytics.js"></script>
 
 </body>
-
 </html>
