@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Center | NEET EDGE OS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/progress.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <button onclick="history.back()">⬅</button>
+
+    <h2>📊 Progress Center</h2>
+
+    <button onclick="location.href='index.html'">🏠</button>
+
+</nav>
+
+<div class="container">
+
+    <section class="card">
+
+        <h3>🔥 Current Streak</h3>
+
+        <h1 id="streakValue">1 Day</h1>
+
+    </section>
+
+    <section class="card">
+
+        <h3>📚 Overall Syllabus</h3>
+
+        <div class="progress">
+            <div class="fill" style="width:0%" id="overallProgress"></div>
+        </div>
+
+        <p id="overallText">0%</p>
+
+    </section>
+
+    <section class="card">
+
+        <h3>⏱ Study Hours</h3>
+
+        <p>Today : 0 Hours</p>
+
+        <p>This Week : 0 Hours</p>
+
+        <p>This Month : 0 Hours</p>
+
+    </section>
+
+</div>
+
+<script src="js/progress-center.js"></script>
+
+</body>
+</html>
