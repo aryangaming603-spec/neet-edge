@@ -138,3 +138,26 @@ font-weight:bold;
 color:#00FF99;
 
 }
+.calendar-card .planner{
+    margin-top:15px;
+}
+
+.plan-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px;
+    margin:10px 0;
+    background:rgba(255,255,255,.06);
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.plan-item span:first-child{
+    color:#00D4FF;
+    font-weight:bold;
+}
+
+.plan-item span:last-child{
+    color:#A8B3CF;
+}
