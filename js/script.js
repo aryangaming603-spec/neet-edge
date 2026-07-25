@@ -1,54 +1,89 @@
-function updateDateTime() {
+// =========================
+// NEET EDGE OS
+// =========================
+
+// Live Clock + Greeting
+function updateClock() {
+
     const now = new Date();
 
     // Time
-    document.getElementById("time").textContent =
-        now.toLocaleTimeString("en-IN", {
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit"
+    document.getElementById("time").innerHTML =
+        now.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
         });
 
     // Date
-    document.getElementById("date").textContent =
-        now.toLocaleDateString("en-IN", {
-            weekday: "long",
-            day: "numeric",
-            month: "long",
-            year: "numeric"
-        });
+    document.getElementById("date").innerHTML =
+        now.toDateString();
 
     // Greeting
     const hour = now.getHours();
-    let greeting = "Good Night 🌙";
 
-    if (hour >= 5 && hour < 12) {
-        greeting = "Good Morning ☀️";
-    } else if (hour >= 12 && hour < 17) {
-        greeting = "Good Afternoon 🌤️";
-    } else if (hour >= 17 && hour < 21) {
-        greeting = "Good Evening 🌇";
-    }
+    let greet = "Good Night 🌙";
 
-    document.getElementById("greeting").textContent = greeting;
+    if(hour >= 5 && hour < 12)
+        greet = "Good Morning ☀️";
+
+    else if(hour >= 12 && hour < 17)
+        greet = "Good Afternoon 🌤️";
+
+    else if(hour >= 17 && hour < 21)
+        greet = "Good Evening 🌆";
+
+    document.getElementById("greeting").innerHTML = greet;
 }
 
-updateDateTime();
-setInterval(updateDateTime, 1000);
+setInterval(updateClock,1000);
+updateClock();
 
 
-function updateCountdown() {
+// =========================
+// Countdown
+// =========================
 
-    const examDate = new Date("May 2, 2027 09:00:00");
+function updateCountdown(){
+
+    // Change this when official date is announced
+    const exam = new Date("2027-05-02");
 
     const today = new Date();
 
-    const diff = examDate - today;
+    const diff = exam - today;
 
-    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    const days = Math.ceil(diff/(1000*60*60*24));
 
-    document.getElementById("countdown").textContent =
+    document.getElementById("countdown").innerHTML =
         days + " Days Left";
 }
 
 updateCountdown();
+
+
+// =========================
+// Fake Progress Animation
+// =========================
+
+let progress = 0;
+
+const fill = document.querySelector(".fill");
+
+const percent = document.querySelector(".card p:last-child");
+
+const animation = setInterval(()=>{
+
+    progress++;
+
+    fill.style.width = progress + "%";
+
+    percent.innerHTML = progress + "%";
+
+    if(progress>=78){
+
+        clearInterval(animation);
+
+    }
+
+},25);
