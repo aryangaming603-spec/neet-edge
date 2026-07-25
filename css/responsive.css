@@ -1,1 +1,43 @@
+/* ==========================
+   Responsive
+========================== */
 
+@media (max-width:600px){
+
+.container{
+
+width:95%;
+
+}
+
+.header h1{
+
+font-size:30px;
+
+}
+
+#time{
+
+font-size:34px;
+
+}
+
+.card{
+
+padding:16px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.buttons button{
+
+width:100%;
+
+}
+
+}
