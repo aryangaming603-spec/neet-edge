@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/goals.css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>NEET EDGE OS</title>
+
+<link rel="icon" href="assets/images/logo.png">
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/header.css">
@@ -21,308 +22,260 @@
 <link rel="stylesheet" href="css/settings.css">
 <link rel="stylesheet" href="css/animation.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/goals.css">
 
 </head>
 
 <body>
-  <!-- Navbar -->
+
+<div class="background"></div>
+
+<!-- Navbar -->
+
 <nav class="navbar">
 
-    <button id="menuBtn">☰</button>
+<button id="menuBtn">☰</button>
 
-    <div class="logo-box">
-    <img src="assets/images/newlogo.png" alt="NEET EDGE Logo">
-    <h1>NEET EDGE OS</h1>
-    </div>
+<div class="nav-logo">
 
+<img src="assets/images/newlogo.png" alt="Logo">
+
+<h2>NEET EDGE OS</h2>
+
+</div>
+
+<button id="themeToggle">🌙</button>
 
 </nav>
 
 <!-- Sidebar -->
+
 <div id="sidebar" class="sidebar">
 
-    <h2>NEET EDGE</h2>
+<div class="sidebar-logo">
 
-    <a href="#">🏠 Dashboard</a>
-    <a href="#">📋 Tasks</a>
-    <a href="#">📚 Chapters</a>
-    <a href="#">⏱ Focus Timer</a>
-    <a href="progress.html">📊 Progress Center</a>
-    <a href="#">⚙ Settings</a>
+<img src="assets/images/logo.png" alt="Logo">
+
+<h2>NEET EDGE</h2>
 
 </div>
 
-<div class="background"></div>
+<a href="index.html">🏠 Dashboard</a>
+
+<a href="progress.html">📊 Progress Center</a>
+
+<a href="#">📅 Planner</a>
+
+<a href="#">📚 Chapters</a>
+
+<a href="#">🎯 Goals</a>
+
+<a href="#">⏱ Focus Timer</a>
+
+<a href="#">📝 Notes</a>
+
+<a href="#">⚙ Settings</a>
+
+</div>
 
 <div class="container">
 
-<header class="header">
+<!-- Hero Section -->
 
-<div class="logo-box">
-    <img src="assets/images/logo.png" alt="NEET EDGE Logo">
-    <h1>NEET EDGE OS</h1>
-</div>
+<header class="hero">
 
-<p id="greeting">Loading...</p>
+<img src="assets/images/logo.png"
+class="hero-logo"
+alt="Logo">
 
-<h2 class="username">Aryan 👋</h2>
+<h1>NEET EDGE OS</h1>
+
+<p class="tagline">
+
+Your Personal AI Study Operating System
+
+</p>
+
+<div class="hero-line"></div>
+
+<p id="greeting">
+
+Good Morning ☀️
+
+</p>
 
 <div class="clock-box">
 
-<h2 id="time">00:00:00</h2>
+<h2 id="time">
 
-<p id="date">Loading...</p>
+00:00:00
+
+</h2>
+
+<p id="date">
+
+Loading...
+
+</p>
 
 </div>
 
-  <button id="themeToggle">🌙 Theme</button>
-  
 </header>
+<!-- Dashboard -->
 
+<section class="dashboard">
 
-<section class="card mission-card">
+    <!-- Today's Mission -->
 
-<h3>🎯 Today's Mission</h3>
+    <div class="card mission-card">
 
-<p>Crack NEET 2027</p>
+        <h2>🎯 Today's Mission</h2>
 
-</section>
+        <p id="todayMission">
+            Finish today's lectures, revise NCERT and solve MCQs.
+        </p>
 
+    </div>
 
-<section class="card countdown-card">
+    <!-- Countdown -->
 
-<h3>⏳ NEET Countdown</h3>
+    <div class="card countdown-card">
 
-<h2 id="countdown">Loading...</h2>
+        <h2>⏳ NEET Countdown</h2>
 
-</section>
+        <h1 id="countdown">Loading...</h1>
 
+    </div>
 
-<section class="card task-card">
+    <!-- Today's Tasks -->
 
-<h3>📋 Today's Tasks</h3>
+    <div class="card">
 
-<div id="taskList">
+        <h2>✅ Today's Tasks</h2>
 
-<label><input type="checkbox"> Physics</label>
+        <div id="taskContainer"></div>
 
-<label><input type="checkbox"> Chemistry</label>
+    </div>
 
-<label><input type="checkbox"> Biology</label>
+    <!-- Focus Timer -->
 
-</div>
+    <div class="card">
 
-<button id="addTask">
+        <h2>⏱ Focus Timer</h2>
 
-➕ Add Task
+        <h1 id="timerDisplay">25:00</h1>
 
-</button>
+        <button id="startTimer">Start</button>
 
-</section>
+        <button id="resetTimer">Reset</button>
 
+    </div>
 
-<section class="card timer-card">
+    <!-- Quick Stats -->
 
-<h3>⏱ Focus Timer</h3>
+    <div class="card">
 
-<h1 id="timer">
+        <h2>📊 Dashboard Stats</h2>
 
-25:00
+        <div class="stats">
 
-</h1>
+            <div class="stat-box">
+                <h3 id="studyHours">0</h3>
+                <p>Study Hours</p>
+            </div>
 
-<div class="buttons">
+            <div class="stat-box">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
 
-<button id="startBtn">
+            <div class="stat-box">
+                <h3 id="streak">0</h3>
+                <p>Streak</p>
+            </div>
 
-▶ Start
-
-</button>
-
-<button id="pauseBtn">
-
-⏸ Pause
-
-</button>
-
-<button id="resetBtn">
-
-🔄 Reset
-
-</button>
-
-</div>
-
-</section>
-
-  <section class="card dashboard-card">
-
-    <h3>🚀 Dashboard</h3>
-
-    <div class="dashboard-grid">
-
-        <div class="mini-card">
-            <h4>🔥 Streak</h4>
-            <p id="streak">0 Days</p>
-        </div>
-
-        <div class="mini-card">
-            <h4>📚 Chapters</h4>
-            <p id="chapters">0 / 83</p>
-        </div>
-
-        <div class="mini-card">
-            <h4>⏰ Study</h4>
-            <p id="studyHours">0 Hrs</p>
-        </div>
-
-        <div class="mini-card">
-            <h4>✅ Tasks</h4>
-            <p id="taskCount">0</p>
         </div>
 
     </div>
 
-  </section>
-  <section class="card calendar-card">
+    <!-- Today's Progress -->
 
-    <h3>📅 Study Planner</h3>
+    <div class="card">
 
-    <p id="todayDate">Loading...</p>
+        <h2>📈 Today's Progress</h2>
 
-    <div class="planner">
+        <div class="progress-bar">
 
-        <div class="plan-item">
-            <span>🧬 Biology</span>
-            <span>09:00 - 11:00</span>
+            <div id="todayProgress"></div>
+
         </div>
 
-        <div class="plan-item">
-            <span>⚛️ Physics</span>
-            <span>11:30 - 01:30</span>
-        </div>
+        <p id="progressText">0%</p>
 
-        <div class="plan-item">
-            <span>🧪 Chemistry</span>
-            <span>03:00 - 05:00</span>
+    </div>
+
+</section>
+<!-- Chapter Tracker -->
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <h2>📚 Chapter Tracker</h2>
+
+        <div id="chapterTracker">
+
+            <p>Physics : 0 / 29</p>
+            <p>Chemistry : 0 / 27</p>
+            <p>Biology : 0 / 27</p>
+
         </div>
 
     </div>
 
-  </section>
-  
-<section class="card goals-card">
+    <!-- Analytics -->
 
-    <h3>🎯 Today's Goals</h3>
+    <div class="card">
 
-    <label><input type="checkbox" class="goal"> Complete Biology NCERT</label>
+        <h2>📊 Analytics</h2>
 
-    <label><input type="checkbox" class="goal"> Solve 150 Physics MCQs</label>
+        <canvas id="analyticsChart"></canvas>
 
-    <label><input type="checkbox" class="goal"> Revise Organic Chemistry</label>
+    </div>
 
-    <label><input type="checkbox" class="goal"> Study 8 Hours</label>
+    <!-- Goals -->
 
-</section>
+    <div class="card">
 
-<section class="card progress-card">
+        <h2>🎯 Goals</h2>
 
-<h3>📈 Today's Progress</h3>
+        <ul class="goal-list">
 
-<div class="progress">
+            <li>✅ Complete Today's Lecture</li>
 
-<div class="fill"></div>
+            <li>📖 Revise NCERT</li>
 
-</div>
+            <li>📝 Solve 200 MCQs</li>
 
-<p id="progressText">
+            <li>🔥 Maintain Streak</li>
 
-0%
+        </ul>
 
-</p>
+    </div>
 
 </section>
-
-
-<section class="card chapter-card">
-
-<h3>📚 Chapter Tracker</h3>
-
-<div class="subject">
-
-Physics
-
-<div class="progress">
-
-<div class="physics"></div>
-
-</div>
-
-</div>
-
-<div class="subject">
-
-Chemistry
-
-<div class="progress">
-
-<div class="chemistry"></div>
-
-</div>
-
-</div>
-
-<div class="subject">
-
-Biology
-
-<div class="progress">
-
-<div class="biology"></div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="card analytics-card">
-
-<h3>📊 Analytics</h3>
-
-<p>
-
-Study Hours : 0
-
-</p>
-
-<p>
-
-Completed Tasks : 0
-
-</p>
-
-<p>
-
-Current Streak : 0
-
-</p>
-
-</section>
-
 
 <footer>
 
-<p>
-
-NEET EDGE OS v2.0 Alpha
-
-</p>
+    <p>
+        © 2026 NEET EDGE OS | Built by Aryan ❤️
+    </p>
 
 </footer>
 
 </div>
+
+<!-- JavaScript -->
 
 <script src="js/script.js"></script>
 <script src="js/clock.js"></script>
@@ -331,11 +284,10 @@ NEET EDGE OS v2.0 Alpha
 <script src="js/tasks.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/progress.js"></script>
-<script src="js/chapter.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/sidebar.js"></script>
 <script src="js/settings.js"></script>
 <script src="js/analytics.js"></script>
-<script src="js/goals.js"></script>
+
 </body>
 </html>
