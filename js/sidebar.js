@@ -1,16 +1,19 @@
-// ==========================
-// Sidebar
-// ==========================
+const menuBtn=document.getElementById("menuBtn");
+const sidebar=document.getElementById("sidebar");
 
-const sidebar = document.getElementById("sidebar");
-const menuBtn = document.getElementById("menuBtn");
+menuBtn.addEventListener("click",()=>{
 
-if(menuBtn && sidebar){
+sidebar.classList.toggle("show");
 
-    menuBtn.addEventListener("click",function(){
+});
 
-        sidebar.classList.toggle("show");
+document.addEventListener("click",(e)=>{
 
-    });
+if(!sidebar.contains(e.target) && e.target!==menuBtn){
+
+sidebar.classList.remove("show");
 
 }
+
+});
+
