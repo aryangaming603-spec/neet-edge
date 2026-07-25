@@ -57,3 +57,14 @@ transition:.3s;
 background:rgba(0,212,255,.18);
 
 }
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.sidebar-logo img{
+    width:45px;
+    height:45px;
+}
