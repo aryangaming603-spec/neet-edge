@@ -1,1 +1,51 @@
+/* ==========================
+   Sidebar
+========================== */
 
+.sidebar{
+
+position:fixed;
+
+top:0;
+
+left:-260px;
+
+width:250px;
+
+height:100%;
+
+background:#08121f;
+
+padding:20px;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.sidebar.show{
+
+left:0;
+
+}
+
+.sidebar h2{
+
+margin-bottom:20px;
+
+color:#00D4FF;
+
+}
+
+.sidebar a{
+
+display:block;
+
+margin:12px 0;
+
+color:white;
+
+text-decoration:none;
+
+}
