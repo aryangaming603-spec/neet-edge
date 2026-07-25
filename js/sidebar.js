@@ -1,19 +1,13 @@
-const menuBtn=document.getElementById("menuBtn");
-const sidebar=document.getElementById("sidebar");
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
 
-menuBtn.addEventListener("click",()=>{
-
-sidebar.classList.toggle("show");
-
+menuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    sidebar.classList.toggle("show");
 });
 
-document.addEventListener("click",(e)=>{
-
-if(!sidebar.contains(e.target) && e.target!==menuBtn){
-
-sidebar.classList.remove("show");
-
-}
-
+document.addEventListener("click", function (e) {
+    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.remove("show");
+    }
 });
-
