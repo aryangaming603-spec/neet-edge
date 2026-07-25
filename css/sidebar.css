@@ -1,26 +1,22 @@
-/* ==========================
-   Sidebar
-========================== */
-
 .sidebar{
 
 position:fixed;
 
 top:0;
+left:-270px;
 
-left:-260px;
+width:260px;
+height:100vh;
 
-width:250px;
+background:#09131f;
 
-height:100%;
+padding:30px 20px;
 
-background:#08121f;
-
-padding:20px;
-
-transition:.35s;
+transition:.4s;
 
 z-index:999;
+
+box-shadow:0 0 25px rgba(0,212,255,.25);
 
 }
 
@@ -32,9 +28,9 @@ left:0;
 
 .sidebar h2{
 
-margin-bottom:20px;
-
 color:#00D4FF;
+
+margin-bottom:25px;
 
 }
 
@@ -42,10 +38,22 @@ color:#00D4FF;
 
 display:block;
 
-margin:12px 0;
+padding:14px;
+
+margin:10px 0;
+
+border-radius:12px;
+
+text-decoration:none;
 
 color:white;
 
-text-decoration:none;
+transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+background:rgba(0,212,255,.18);
 
 }
