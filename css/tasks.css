@@ -1,1 +1,51 @@
+.task-item{
 
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin:12px 0;
+
+padding:12px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:12px;
+
+}
+
+.task-item label{
+
+flex:1;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+.delete-btn{
+
+background:#ff3b5c;
+
+color:white;
+
+border:none;
+
+padding:8px 12px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+transform:scale(1.08);
+
+}
